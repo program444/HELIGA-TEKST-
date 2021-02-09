@@ -39,7 +39,7 @@ entry_field.place(x=20 , y=100)
 
 def Tekst():
     Message = entry_field.get()
-    speech = gTTS(text = Message, lang ='et')
+    speech = gTTS(text = Message, lang ='et', slow = True)
     speech.save('DataFlair.mp3')
     playsound('DataFlair.mp3')
 
